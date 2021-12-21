@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://equinoxtrail.com/</loc>
+  <lastmod>2019-12-03T11:47:22+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://equinoxtrail.com/moon.html</loc>
+  <lastmod>2019-12-03T10:56:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://equinoxtrail.com/sun.html</loc>
+  <lastmod>2019-12-03T10:56:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://equinoxtrail.com/docs/DOSSIER_EQUINOX-TRAIL.pdf</loc>
+  <lastmod>2019-12-02T18:54:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://equinoxtrail.com/docs/REGLAMENT_EQUINOX-TRAIL.pdf</loc>
+  <lastmod>2019-11-18T14:06:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://equinoxtrail.com/docs/PERFIL_EQUINOX-TRAIL.pdf</loc>
+  <lastmod>2019-11-25T12:53:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://equinoxtrail.com/index.html</loc>
+  <lastmod>2019-12-03T11:47:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://equinoxtrail.com/docs/PERFIL_EQUINOX-TRAIL--MOON.pdf</loc>
+  <lastmod>2019-11-25T12:53:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://equinoxtrail.com/docs/PERFIL_EQUINOX-TRAIL--SUN.pdf</loc>
+  <lastmod>2019-11-25T12:53:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://equinoxtrail.com/img</loc>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/econox-logo--black.png</image:loc>
+  </image:image>
+    <image:image>
+    <image:loc>http://equinoxtrail.com/img/equibox-logo.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/PERFIL__EQUINOX-TRAIL--MOON.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/PERFIL__EQUINOX-TRAIL--SUN.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/jumbotron-1.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/jumbotron-1.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/jumbotron-2.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/jumbotron-3.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/moong-bg.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/sun-bg.png</image:loc>
+  </image:image>
+    <image:image>
+    <image:loc>http://equinoxtrail.com/img/jumbotron-1--lazy.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/jumbotron-2--lazy.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/jumbotron-3--lazy.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/moong-bg--lazy.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/sun-bg--lazy.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:loc>http://equinoxtrail.com/img/video-screenshot.png</image:loc>
+  </image:image>
+</url>
+</urlset>
+
+</urlset>

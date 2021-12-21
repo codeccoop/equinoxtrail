@@ -1,0 +1,177 @@
+/*ESTILS PÀGINES INFO CURSES*/
+
+.moon header.opaque {
+    background-color: var(--moon-color);
+    border-bottom: 0px;
+}
+
+.sun header.opaque {
+    background-color: var(--sun-color);
+    border-bottom: 0px;
+}
+
+.sun header .header__navmenu-item a,
+.moon header .header__navmenu-item a {
+    color: var(--primary-color);
+}
+
+.sun .opaque .header__navmenu-item a,
+.moon .opaque .header__navmenu-item a {
+    font-weight: bold;
+}
+
+.sun .header__navmenu-item:hover > a, 
+.moon .header__navmenu-item:hover > a {
+    color: var(--primary-color);
+}
+
+#info-track {
+    padding-top: 25vh;
+    text-align: left;
+}
+
+@media (orientation: portrait) {
+    #info-track {
+        padding-top: 12.5vh;
+    }   
+}
+
+@media (max-width: 750px) {
+    #info-track {
+        padding-top: 15vh;
+    }   
+}
+
+.moon #info-track {
+    background-size: cover;
+    background-image: url(../img/moon-bg--lazy.png);
+    color: var(--primary-color);
+}
+
+.loaded.moon #info-track {
+    background-image: url(../img/moon-bg.png);
+}
+
+.sun #info-track {
+    background-size: cover;
+    background-image: url(../img/sun-bg--lazy.png);
+    color: var(--primary-color);
+}
+
+.loaded.sun #info-track {
+    background-image: url(../img/sun-bg.png);
+}
+
+#info-track h1 {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    #info-track h1 {
+        font-size: 1.5rem;
+    }
+}
+
+#info-track img {
+    padding: 5% 10% 1%;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+#info-track .info-track__buttons {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20vw;
+}
+
+@media screen and (max-width: 950px) {
+    #info-track .info-track__buttons {
+        padding: 0px 15vw;
+    }
+}
+
+#info-track .info-track__buttons a {
+    flex: 1;
+    display: flex;
+    margin: 0px 5px;
+}
+
+#info-track .info-track__buttons button {
+    flex: 1;
+}
+
+#info-track .info-track__buttons a {
+    color: var(--primary-color);
+}
+
+.moon #info-track .info-track__buttons .btn--primary:hover {
+    background-color: var(--sun-color);
+}
+
+.sun #info-track .info-track__buttons .btn--primary:hover {
+    background-color: var(--moon-color);
+}
+
+.moon .buttons-wrapper,
+.sun .buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0px;
+}
+
+.moon .buttons-wrapper button,
+.sun .buttons-wrapper button {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 950px) {
+    .moon .buttons-wrapper button,
+    .sun .buttons-wrapper button {
+        font-size: 1.1rem;
+    }   
+}
+
+.sun .buttons-wrapper button {
+    flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+    #info-track img {
+        padding: 10% 1% 5%;
+    }   
+}
+
+#info-track ol {
+    padding: 0px;
+}
+
+#info-track ol li {
+    font-size: 0.9rem;
+    color: #ffffffdd;
+}
+
+#info-track ol li span {
+    /* font-size: 1rem; */
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+    #info-track ol li {
+        font-size: .8rem;
+    }
+    
+    #info-track ol li span {
+        /* font-size: .8rem; */
+        font-weight: bold;
+        color: var(--primary-color);
+    }   
+}
+
+.race-details {
+    border-bottom: .5px solid;
+}
+
+.sun .opaque .navmenu-burger__icon,
+.moon .opaque .navmenu-burger__icon {
+    background-image: url(../img/burger-icon.svg);
+}

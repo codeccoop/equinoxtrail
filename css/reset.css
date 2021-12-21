@@ -1,0 +1,452 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  height: 100%;
+  margin: 0;
+  min-height: 600px;
+  padding: 0;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+}
+#loader {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.5s ease-out;
+  width: 100%;
+  z-index: 1501;
+}
+#loader:not(.visible) {
+  display: none;
+}
+#app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+@-moz-keyframes blur {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blur {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes blur {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blur {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+button,
+.button,
+.btn {
+  background-color: #444;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  /* font-family: "Times New Roman", sans-serif; */
+  font-weight: 700;
+  padding: 0.8em 3em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+button:hover,
+.button:hover,
+.btn:hover {
+  color: #fff;
+}
+button:active,
+.button:active,
+.btn:active {
+  outline: none;
+}
+button.is-disabled,
+.button.is-disabled,
+.btn.is-disabled,
+button[disabled],
+.button[disabled],
+.btn[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+  position: relative;
+}
+button.is-disabled:after,
+.button.is-disabled:after,
+.btn.is-disabled:after,
+button[disabled]:after,
+.button[disabled]:after,
+.btn[disabled]:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+button + button,
+.button + .button,
+.btn + .btn {
+  margin-left: 10px;
+}
+a.btn {
+  color: #fff;
+  text-decoration: none;
+}
+a.btn:hover {
+  text-decoration: none;
+}
+.btn--primary {
+  background-color: var(--font-color);
+}
+.btn--primary:hover {
+  background-color: var(--sun-color);
+}
+.btn--primary:active {
+  background-color: var(--sun-color);
+}
+.btn--primary.btn--ghost {
+  background-color: transparent;
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+}
+.btn--primary.btn--ghost:hover {
+  border-color: var(--sun-color);
+  color: var(--sun-color);
+}
+.btn--primary.btn--ghost:active {
+  border-color: var(--sun-color);
+  color: var(--sun-color);
+}
+.btn--secondary {
+  background-color: #fff;
+  color: var(--font-color);
+}
+.btn--secondary:hover {
+  background-color: #f2f2f2;
+  color: var(--font-color);
+}
+.btn--secondary:active {
+  background-color: #e6e6e6;
+  color: var(--font-color);
+}
+.btn--secondary.btn--ghost {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn--secondary.btn--ghost:hover {
+  border-color: #f2f2f2;
+  color: #f2f2f2;
+}
+.btn--secondary.btn--ghost:active {
+  border-color: #e6e6e6;
+  color: #e6e6e6;
+}
+.btn-icon {
+  display: inline-block;
+  height: 1.2em;
+  margin-right: 0.2em;
+  margin-top: -0.2em;
+  vertical-align: middle;
+}
+.btn-group {
+  display: flex;
+}
+.btn-group > .btn:not(:last-child) {
+  margin-right: 10px;
+}
+.schedule__wrapper {
+  border: 1px solid #707070;
+  margin: 0 auto;
+}
+.schedule__wrapper .schedule__title {
+  align-items: center;
+  border-bottom: 1px solid #707070;
+  display: flex;
+  padding: 10px;
+}
+.schedule__wrapper .schedule__title .schedule__current-month {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  font-family: "Seat Bcn Book";
+  justify-content: center;
+  text-align: center;
+}
+.schedule__wrapper .schedule__title .schedule__month-navigator {
+  border: 1px solid #707070;
+  border-radius: 50%;
+  color: #707070;
+  cursor: pointer;
+  height: 30px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  width: 30px;
+}
+.schedule__wrapper .schedule__title .schedule__month-navigator:hover {
+  background-color: #707070;
+}
+.schedule__wrapper .schedule__title .schedule__month-navigator:hover.prev:before,
+.schedule__wrapper .schedule__title .schedule__month-navigator:hover.next:before {
+  border-color: #fff;
+}
+.schedule__wrapper .schedule__title .schedule__month-navigator.prev:before,
+.schedule__wrapper .schedule__title .schedule__month-navigator.next:before {
+  top: calc(50% - 1px);
+}
+.schedule__wrapper .schedule__body {
+  padding: 15px 0;
+}
+.schedule__wrapper .schedule__body .schedule__days-labels {
+  display: flex;
+  justify-content: center;
+}
+.schedule__wrapper .schedule__body .schedule__days-labels .schedule__day-label {
+  font-weight: 500;
+  height: 15px;
+  margin: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 30px;
+}
+.schedule__wrapper .schedule__body .schedule__days-grid .schedule__week-row {
+  display: flex;
+  justify-content: center;
+}
+.schedule__wrapper .schedule__body .schedule__days-grid .schedule__week-row .schedule__day-cell {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-family: "Seat Bcn Book";
+  height: 40px;
+  justify-content: center;
+  margin: 5px;
+  width: 40px;
+}
+.schedule__wrapper .schedule__body .schedule__days-grid .schedule__week-row .schedule__day-cell:hover {
+  color: var(--font-color);
+}
+.schedule__wrapper .schedule__body .schedule__days-grid .schedule__week-row .schedule__day-cell.limit-date {
+  border-color: var(--font-color);
+  border-width: 1px;
+  border-style: dashed;
+  background-color: none;
+  color: #000;
+  border-radius: 50%;
+}
+.schedule__wrapper .schedule__body .schedule__days-grid .schedule__week-row .schedule__day-cell.selected {
+  background-color: var(--font-color);
+  border-radius: 50%;
+  color: #fff;
+}
+.schedule__wrapper .schedule__body .schedule__days-grid .schedule__week-row .schedule__day-cell.outter {
+  cursor: pointer default;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.u-pull-left {
+  float: left !important;
+}
+.u-pull-right {
+  float: right !important;
+}
+.is-hidden {
+  display: none !important;
+}
+.inline-list {
+  display: flex;
+}
+.inline-list > li {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.inline-list > li:not(:last-child) {
+  margin-right: 16px;
+}
+.inline-list > li:not(:last-child):after {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  margin-left: 16px;
+  margin-top: -2px;
+  vertical-align: middle;
+  width: 1px;
+}
+.inline-list > li.selected {
+  font-weight: bold;
+  cursor: default;
+}

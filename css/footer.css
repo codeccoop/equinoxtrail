@@ -1,0 +1,205 @@
+footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+footer p, footer h2 {
+    text-align: center;
+}
+
+footer h2 {
+    line-height: 1.2;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+}
+
+footer h2 div {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline;
+}
+
+footer h2 > span:nth-child(2) {
+    letter-spacing: 10px;
+    font-size: 1.5em;
+}
+
+footer h2 > span:nth-child(3) {
+    letter-spacing: 5px;
+    display: block;
+}
+
+footer h2 div span {
+    color: var(--sun-color);
+}
+
+footer h2 div span:last-child {
+    color: var(--moon-color);
+}
+
+.footer__social-media-wrapper {
+    padding: 15px 0px 30px;
+}
+
+.footer__social-media {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer__social-media a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__social-media-item {
+    height: 25px;
+    width: 25px;
+    /* border: .5px solid; */
+    /* border-radius: 3px; */
+    opacity: .97;
+    margin: 0px 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#insta.footer__social-media-item {
+    background-image: url(../img/instagram-icon.svg);
+    background-size: 90%;
+}
+
+#mail.footer__social-media-item {
+    background-image: url(../img/gmail-icon.svg);
+}
+
+#vimeo.footer__social-media-item {
+    background-image: url(../img/vimeo-icon.svg);
+    background-size: 94%;
+}
+
+.footer__phone {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.footer__phone > span {
+    font-size: 0.8rem;
+    position: relative;
+    margin-left: 12.5px;
+    line-height: 20px;
+}
+
+.footer__phone > span:after {
+    position: absolute;
+    top: -2px;
+    left: -24px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image: url(../img/phone-icon.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .97;
+}
+
+.footer__partners-wrapper,
+.footer__organization-wrapper {
+    padding: 30px 0px;
+    opacity: .97;
+}
+
+.footer__partners-wrapper {
+    flex: 1;
+}
+
+.footer__organization-title,
+.footer__partners-title {
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 950px) {
+    .footer__organization-title,
+    .footer__partners-title {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer__organization-title,
+    .footer__partners-title {
+        font-size: .8em;
+    }
+}
+
+.footer__organization-content,
+.footer__partners-content {
+    height: calc(100% - 25px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__partners-content a {
+    color: inherit;
+}
+
+.footer__partners-content div {
+    width: 150px;
+    height: 150px;
+    /* border: .5px solid; */
+    border-radius: 4px;
+    margin: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__partners-content div[partner=grimpada] {
+    background-image: url(../img/grimpada-icon.png);    
+}
+
+.footer__partners-content div[partner=comeypedalea] {
+    background-image: url(../img/comeypedalea-logo.png);    
+}
+
+.footer__partners-content div[partner=superglorioso] {
+    background-image: url(../img/gloriososport-logo.png);    
+}
+
+.footer__partners-content div[partner=hydroflask] {
+    background-image: url(../img/hydroflask-logo.png);    
+}
+
+.footer__partners-content div[partner=yogitea] {
+    background-image: url(../img/yogitea-logo.png);    
+}
+
+.footer__partners-content div[partner=julbo] {
+    background-image: url(../img/julbo-logo.png);    
+}
+
+.footer__partners-content div[partner=ledlenser] {
+    background-image: url(../img/ledlenser-logo.png);    
+}
+
+.footer__partners-content div[partner=kh7] {
+    background-image: url(../img/kh7-logo.png);    
+}
+
+.footer__partners-content div[partner=dir] {
+    background-image: url(../img/dir-logo.png);    
+}
+
+.footer__partners-content div[partner=runningrepubilc] {
+    background-image: url(../img/the_running_republic-logo.png);    
+}
+
+.credits {
+    margin-top: 50px;
+    font-size: 0.7rem;
+}

@@ -1,0 +1,579 @@
+/*SECCIONS*/
+
+.section {
+    padding: 10vh 10vw;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+.section p,
+.section h3,
+.section h2,
+.section h1,
+.section ul,
+.section ol {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.section h2 {
+    margin-bottom: 25px;
+}
+
+.section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+@media (max-width: 1250px) {
+    .section {
+        padding: 10vh 7vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 10vh 5vw;
+    }
+
+    .section p,
+    .section h3,
+    .section h2,
+    .section h1,
+    .section ul,
+    .section ol {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-size: .9rem;
+    }
+
+    /* .section h3 {
+        margin-bottom: 20px;
+    } */
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax.left {
+    background-position: left;
+}
+
+.parallax.right {
+    background-position: right;
+}
+
+#inici {
+    background-image: url("../img/jumbotron-1--lazy.jpg");
+    /* height: 750px; */
+    /* height: 100vh; */
+    box-shadow: 0px 0px 30px inset #00000088;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.loaded #inici {
+    background-image: url("../img/jumbotron-1.jpg");
+}
+
+#inici h1 {
+    text-align: left; /* center; */
+    line-height: 1;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #00000055;
+    /* letter-spacing: .7em; */
+    font-weight: bold;
+    font-size: 2.75rem;
+}
+
+#inici h1 div:nth-child(1) {
+    letter-spacing: 15px;
+    font-size: 1.5em;
+}
+
+#inici h1 div:nth-child(2) {
+    letter-spacing: 10px;
+    font-size: 1.2em;
+}
+
+#inici h1 div:nth-child(3) {
+    font-size: 1em;
+}
+
+#inici h1 span {
+    color: var(--sun-color);
+}
+
+#inici h1 span:nth-child(2) {
+    color: var(--moon-color);
+}
+
+#inici .buttons-wrapper {
+    margin-left: 15vw;
+    margin-top: 25px;
+}
+
+#inici .btn {
+    box-shadow: 0px 0px 10px #00000088;
+    margin: 0px 5px;
+}
+
+#inici .btn a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#inici .btn.inscriptions-btn {
+    background-color: #fff4;
+}
+
+#inici .btn.inscriptions-btn:hover {
+    background-color: var(--primary-color);
+}
+
+#inici .btn.inscriptions-btn a {
+    color: var(--primary-color);
+}
+
+#inici .btn.info-btn a {
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+@media screen and (orientation: portrait) {
+    #inici h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #inici {
+        background-position-x: 60%;
+    }
+
+    #inici h1 {
+        font-size: 1.5rem;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    #inici .buttons-wrapper {
+        margin-left: 5vw;
+        margin-top: 5px;
+    }
+}
+
+/* #info {
+    border-top: 7px solid;
+} */
+
+#info h2:not(.econox) {
+    color: var(--moon-color);
+    /* margin-top: 50px; */
+    /* margin-bottom: 20px; */
+}
+
+#info a.econox {
+    padding-left: calc(50% - 100px);
+    padding-right: calc(50% - 100px);
+}
+
+#info .econox {
+    color: #008000bf;
+}
+
+#info h2.econox {
+    padding-top: 30px;
+}
+
+/* #econox {
+    background-color: #97d06c;
+}
+
+#econox > a {
+    padding-left: calc(50% - 100px);
+    padding-right: calc(50% - 100px);
+} */
+
+#econoxLogo {
+    width: 200px;
+}
+
+#track {
+    background-color: var(--secondary-color);
+}
+
+#track h2 {
+    color: var(--sun-color);
+}
+
+#track p {
+    color: var(--primary-color);
+}
+
+/* #inscripcions {
+    background-image: url("..//img/jumbotron-2.jpg");
+    color: var(--primary-color);
+    height: 500px;
+} */
+
+#media {
+    color: var(--primary-color);
+    background-image: url(../img/jumbotron-2--lazy.jpg);
+}
+
+.loaded #media {
+    background-image: url(../img/jumbotron-2.jpg);
+}
+
+#media .media__iframe-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    #media .media__iframe-wrapper {
+        margin: 20px 0px;
+    }
+}
+
+#media p {
+    text-align: center;
+}
+
+#media p a {
+    color : var(--primary-color);
+}
+
+#media p a:hover {
+    text-decoration: underline;
+}
+
+#resultats {
+    background-image: url(../img/jumbotron-3--lazy.jpg);
+    color: var(--font-color);
+}
+
+.loaded #resultats {
+    background-image: url(../img/jumbotron-3.jpg);
+}
+
+#resultats .results__bottom {
+    padding-top: 20px;
+}
+
+#resultats .results__bottom-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resultats .results__bottom-wrapper p {
+    margin: 0;
+    font-size: 0.8rem;
+    opacity: .9;
+}
+
+#resultats .results__bottom-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/km0__logo--long--black.svg);
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    #resultats .results__bottom-wrapper p {
+        font-size: 0.8em;
+    }
+
+    #resultats .results__bottom-image {
+        height: 35px;
+    }   
+}
+
+#documents {
+    padding: 6vh 10vw 8vh;
+}
+
+#documents > h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#documents li {
+    text-align: center;
+}
+
+#documents a {
+    line-height: 25px;
+    color: var(--font-color);
+    position: relative;
+}
+
+#documents a:before {
+    content: "·";
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Myriad Pro Bold', sans-serif;
+}
+
+#documents a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    #documents > h4 {
+        font-size: 0.7rem;
+    }
+
+    #documents ul {
+        font-size: .7rem;
+    }
+}
+
+.results__curses,
+.track__curses {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    flex-direction: row;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    margin: 40px 10vw 0px;
+}
+
+@media (orientation: portrait) {
+    .results__curses,
+    .track__curses {
+        margin: 0px 5vw;
+    }   
+}
+
+.results__button-wrapper,
+.track__button-wrapper {
+    flex: 1;
+    max-width: 250px;
+    /* padding: 30px 10% 0px; */
+}
+
+.results__button-wrapper {
+    height: 300px;
+}
+
+.track__button-wrapper {
+    height: 360px;
+}
+
+@media screen and (max-width: 1200px) {
+    .results__button-wrapper,
+    .track__button-wrapper {
+        max-width: 220px;
+        /* padding: 30px 5% 0px; */
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .results__button-wrapper,
+    .track__button-wrapper {
+        max-width: 175px;
+        /* padding: 30px 5% 0px; */
+    }
+
+    .results__button-wrapper {
+        height: 200px;
+    }
+
+    .track__button-wrapper {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .results__button-wrapper,
+    .track__button-wrapper {
+        max-width: 175px;
+        /* padding: 30px 5% 0px; */
+    }
+
+    .results__button-wrapper {
+        height: 200px;
+    }
+
+    .track__button-wrapper {
+        height: 350px;
+        /* padding: 30px 5% 0px; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .track__button-wrapper,
+    .results__button-wrapper {
+        max-width: 120px;
+        /* padding: 30px 3% 0px; */
+    }
+
+    .track__button-wrapper {
+        height: 275px;
+    }
+}
+
+.results__info-btn,
+.track__info-btn {
+    height: 100%;
+    width: 100%;
+    padding: 20px 15px 40px;
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    border-radius: 5px;
+    transition: border-color 0.3s ease-out, background-color 0.3s ease-in-out;
+    color: white;
+    display: block;
+}
+
+.track__info-btn {
+    height: calc(100% - 60px);
+}
+
+.results__info-btn {
+    border-color: #ffffff00;
+    color: var(--font-color);
+}
+
+.is-phone .track__info-btn,
+.track__info-btn:hover,
+.track__info-btn[mouseover] {
+    border-color: var(--sun-color);
+    box-shadow: 0px 0px 10px #ffffff22;
+}
+
+.is-phone .results__info-btn,
+.results__info-btn:hover {
+    /* border-color: var(--font-color); */
+    box-shadow: 0px 0px 10px #00000022;
+    background-color: #ffffff88;
+}
+
+.is-phone .results__info-btn .results__box,
+.results__info-btn:hover .results__box,
+.is-phone .track__info-btn .track__box,
+.track__info-btn:hover .track__box,
+.track__info-btn[mouseover] .track__box {
+    opacity: 1;
+}
+
+
+.is-phone .results__info-btn .results__box-body,
+.results__info-btn:hover .results__box-body,
+.is-phone .track__info-btn .track__box-body,
+.track__info-btn:hover .track__box-body,
+.track__info-btn[mouseover] .track__box-body {
+    background-size: 50%;
+}
+
+.track__info-btn .track__box .info {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.results__box-title,
+.track__box-title {
+    text-align: center;
+    text-transform: uppercase;
+    /* height: 40px; */
+}
+
+@media (orientation: portrait) {
+    .results__box-title,
+    .track__box-title {
+        height: 30px;
+    }
+}
+
+.results__box,
+.track__box {
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+    transition: opacity 0.3s ease-in-out
+}
+
+.results__box-body,
+.track__box-body {
+    height: calc(100% - 30px);
+    width: 100%;
+    text-align: center;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 80%;
+    transition: background-size 0.3s ease-in-out;
+}
+
+.track__box-body p {
+    font-size: 0.7em;
+    margin: 0;
+}
+
+.track__box-body p:first-child span {
+    margin-left: 5px;
+}
+
+.moon .results__box-body,
+.moon .track__box-body {
+    background-image: url(../img/equinox-logo__moon.png);
+}
+
+.sun .results__box-body,
+.sun .track__box-body {
+    background-image: url(../img/equinox-logo__sun.png);
+}
+
+.league .results__box-body,
+.league .track__box-body {
+    background-image: url(../img/equinox-logo__league.png);
+}
+
+.track__box-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.btn.inscription-btn {
+    margin-top: 20px;
+}
+
+@media (orientation: portrait) {
+    .results__info-btn,
+    .track__info-btn {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .results__info-btn,
+    .track__info-btn {
+        padding-bottom: 10px;
+    }
+}

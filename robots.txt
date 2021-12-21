@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: rs/*
+
+Sitemap: https://equinoxtrail.com/sitemap.xml

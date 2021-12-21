@@ -1,0 +1,73 @@
+/*NAVEGADOR LATERAL*/
+
+#navlateral {
+    z-index: 50;
+    margin: 100px 0px;
+    width: 25px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+}
+
+.style_navlateral {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    justify-self: center;
+}
+
+.style_navlateral_item {
+    position: relative;
+    padding: 0px;
+    padding-top: 7px;
+}
+
+.style_navlateral_symbol {
+    fill: transparent;
+    transition: all 0.2s ease-in-out;
+    stroke: white;
+    stroke-width: 4px;
+    -webkit-box-flex: 0;
+    -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+nav a:hover circle {
+    fill: var(--sun-color);
+}
+
+body[section="inici"] .style_navlateral_item:nth-child(1) .style_navlateral_symbol {
+    fill: white;
+}
+
+body[section="info"] .style_navlateral_item:nth-child(2) .style_navlateral_symbol {
+    fill: white;
+}
+
+body[section="track"] .style_navlateral_item:nth-child(3) .style_navlateral_symbol {
+    fill: white;
+}
+
+/* body[section="inscripcions"] .style_navlateral_item:nth-child(4) .style_navlateral_symbol {
+    fill: white;
+} */
+
+body[section="media"] .style_navlateral_item:nth-child(4) .style_navlateral_symbol {
+    fill: white;
+}
+
+body[section="resultats"] .style_navlateral_item:nth-child(5) .style_navlateral_symbol {
+    fill: white;
+}
+
+body[section="documents"] .style_navlateral_item:nth-child(6) .style_navlateral_symbol {
+    fill: white;
+}

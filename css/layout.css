@@ -1,0 +1,165 @@
+/* @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700');
+
+@font-face {
+  font-family: 'Myriad Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold'), url('MYRIADPRO-BOLD.woff') format('woff');
+} */
+
+:root {
+  --sun-color: #ffba00;
+  --moon-color: #2d4c77;
+  --font-color: #222222;
+  --primary-color: white;
+  --secondary-color: #2a2c31;
+  --header-height: 100px;
+}
+
+html {
+  font: 300 18px/1.6 'Roboto', sans-serif;
+}
+
+body.sun {
+  font-weight: 400;
+}
+
+@media (orientation: portrait) {
+  body {
+    font: 300 12px/1.6 'Roboto', sans-serif;
+  }
+}
+
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90px;
+  height: 90px;
+  float: left;
+  /* width: 100%; */
+}
+
+/*HEADERFOOTER*/
+
+header {
+  height: var(--header-height);
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  z-index: 10;
+}
+
+body.warn.warned header,
+body.warn.overflow header {
+  top: 50px;
+}
+
+body.warn.warned.is-phone header,
+body.warn.overflow.is-phone header {
+  top: 30px;
+}
+
+.header__logo {
+  margin-left: 20px;
+  height: 70px;
+  width: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/equinox-logo--white.png);
+  filter: drop-shadow(2px 4px 6px #00000044)
+}
+
+.opaque {
+  background-color: white;
+  box-shadow: 2px 0px 10px #00000055;
+  border-bottom: 3px solid var(--moon-color);
+}
+
+.opaque .header__logo {
+  background-image: url(../img/equinox-logo.png);
+  filter: none;
+}
+
+.sun .opaque .header__logo,
+.moon .opaque .header__logo {
+  background-image: url(../img/equinox-logo--white.png);
+  filter: none;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 70px;
+  }
+
+  .header__logo {
+    height: 40px;
+  }
+}
+
+footer {
+  min-height: 600px;
+  position: relative;
+  width: 100%;
+  background-color: #222222; /* #818288; */
+  padding: 5vh 15vw 10px;
+  color: var(--primary-color);
+}
+
+.floatright {
+  float: right;
+}
+
+.floatleft {
+  float: left;
+}
+
+/*MENU NAV*/
+nav ul {
+  list-style: none;
+  background-color: transparent;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: normal;
+}
+
+button.btn.inscriptions-btn,
+button.btn.inscription-btn {
+  color: var(--primary-color);
+  border: 1px solid;
+  background-color: #fff0;
+}
+
+button.btn.inscriptions-btn:hover,
+button.btn.inscription-btn:hover {
+  border: 1px solid #fff0;
+  color: var(--font-color);
+  background-color: var(--primary-color); 
+}
+
+@media (orientation: portrait) {
+  .btn {
+      font-size: 0.7rem;
+      padding: 0.8em 2em 0.95em;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn {
+      font-size: 0.55rem;
+      padding: 0.65em 2em 0.75em;
+      border-radius: 2px;
+  }
+}

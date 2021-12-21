@@ -1,0 +1,84 @@
+body:not(.warn) .warning {
+    display: none;
+}
+
+.warn-band {
+    display: none;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: yellow;    
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.is-phone .warn-band {
+    line-height: 30px;
+}
+
+body.warn.warned .warn-band {
+    display: block;
+}
+
+body.warn.overflow .warn-band {
+    height: 50px;
+    display: block;
+}
+
+body.warn.overflow.is-phone .warn-band {
+    height: 30px;
+    display: block;
+}
+
+.warn-modal {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    background-color: #ffff00eb;
+    /* transition: bottom 0.5s ease-in; */
+}
+
+body.warn.warned .warn-modal,
+body.warn.overflow .warn-modal {
+    display: none;
+}
+
+.warn-modal__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warn-modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 10vw;
+    color: #222222;
+    font-size: 25px;
+}
+
+.is-phone .warn-modal__content {
+    font-size: 15px;
+}
+
+.warn-modal__content h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px;
+}
+
+.warn-modal__content p {
+    font-size: 1em;
+    line-height: 1;
+    text-shadow: 2px 2px 4px #22222255;
+}
