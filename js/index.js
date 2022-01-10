@@ -250,9 +250,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function loadWarnings() {
-  window.WARN = {
-    active: false,
-  };
   const xhr = new XMLHttpRequest();
 
   xhr.onreadystatechange = function () {
@@ -292,5 +289,8 @@ function onLoadWarnings() {
     </div>`;
 }
 
+window.WARN = {
+  active: false,
+};
 // loadWarnings();
 document.body.addEventListener("warn", onLoadWarnings);
