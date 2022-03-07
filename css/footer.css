@@ -164,7 +164,7 @@ footer h2 div span:last-child {
 }
 
 .footer__partners-content div[partner=comeypedalea] {
-    background-image: url(../img/comeypedalea-logo.png);    
+    background-image: url(../img/comeypedalea-logo2.png);    
 }
 
 .footer__partners-content div[partner=superglorioso] {
@@ -175,12 +175,8 @@ footer h2 div span:last-child {
     background-image: url(../img/hydroflask-logo.png);    
 }
 
-.footer__partners-content div[partner=yogitea] {
-    background-image: url(../img/yogitea-logo.png);    
-}
-
-.footer__partners-content div[partner=julbo] {
-    background-image: url(../img/julbo-logo.png);    
+.footer__partners-content div[partner=archmax] {
+    background-image: url(../img/archmax-logo.png);    
 }
 
 .footer__partners-content div[partner=ledlenser] {
