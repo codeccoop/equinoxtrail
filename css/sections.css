@@ -248,11 +248,36 @@
     }
 }
 
-#media p {
+#media .media__images-thumbnails {
+	display: flex;
+	justify-content: center;
+}
+
+.is-phone .media__images-thumbnails {
+	flex-wrap: wrap;
+}
+
+#media .media__images-thumbnails img {
+	margin-bottom: .5rem;
+	width: 10vw;
+	transition: width 200ms;
+	border-radius: 3px;
+	box-shadow: 0px  0px 5px #0003;
+}
+
+.is-phone #media .media__images-thumbnails img {
+	width: 25vw;
+}
+
+#media .media__images-thumbnails img + img {
+	margin-left: .5rem;
+}
+
+#media .media__images p {
     text-align: center;
 }
 
-#media p a {
+#media .media__images p a {
     color : var(--primary-color);
 }
 
